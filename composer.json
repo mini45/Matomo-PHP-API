@@ -1,5 +1,5 @@
 {
-	"name": "visualappeal/matomo-php-api",
+	"name": "mini45/matomo-php-api",
 	"description": "API wrapper for matomo",
 	"license": "MIT",
 	"require": {
