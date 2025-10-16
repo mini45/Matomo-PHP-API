@@ -5348,6 +5348,20 @@ class Matomo
         ], $optional);
     }
 
+    //
+    public function inviteUser(string $userLogin, string $email, $initialIdSite = null ): mixed
+    {
+        $params = [
+            'userLogin' => $userLogin,
+            'email'     => $email,
+        ];
+        if (null !== $initialIdSite) {
+            $params['initialIdSite'] = $initialIdSite;
+        }
+        return $this->_request('UsersManager.inviteUser', $params);
+        
+    }
+
     /**
      * Add a user
      *
